@@ -7,6 +7,8 @@
 //
 
 #import "fgameAppDelegate.h"
+#import "welcome.h"
+#import "mainGameView.h"
 
 @implementation fgameAppDelegate
 
@@ -17,11 +19,38 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    CGRect statusBarFrame, windowFrame, viewFrame;
+
+    statusBarFrame = [[UIApplication sharedApplication] statusBarFrame];
+    windowFrame = [[UIScreen mainScreen] bounds];
+    viewFrame.origin = CGPointMake(windowFrame.origin.x,
+                                   statusBarFrame.origin.y + statusBarFrame.size.height);
+    viewFrame.size = CGSizeMake(windowFrame.size.width,
+                                windowFrame.size.height - statusBarFrame.size.height
+                                - statusBarFrame.origin.y);
+
+    _window = [[UIWindow alloc] initWithFrame:windowFrame];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    _window.backgroundColor = [[UIColor whiteColor] autorelease];
+    
+    welcomeCtl = [[welcome alloc] initWithFrame:viewFrame];
+    [_window addSubview:[welcomeCtl view]];
+    
+    gameView = [[mainGameView alloc] initWithFrame:viewFrame];
+    welcomeCtl.enterView = gameView;
+
     [self.window makeKeyAndVisible];
+    
+    [welcomeCtl release];
+
     return YES;
+}
+
+- (void) dealloc {
+    [_window release];
+    [__managedObjectContext release];
+    [__managedObjectModel release];
+    [__persistentStoreCoordinator release];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

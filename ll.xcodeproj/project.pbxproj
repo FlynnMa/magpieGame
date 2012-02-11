@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1850258B14CED651004588DD /* FloorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850258A14CED651004588DD /* FloorController.m */; };
+		1850258E14CEDD89004588DD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1850258D14CEDD89004588DD /* QuartzCore.framework */; };
+		1850259C14D03BB0004588DD /* PauseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850259B14D03BB0004588DD /* PauseViewController.m */; };
+		185025A314D191B2004588DD /* FloorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 185025A214D191B1004588DD /* FloorManager.m */; };
+		185025A614D266B2004588DD /* loseWinView.m in Sources */ = {isa = PBXBuildFile; fileRef = 185025A514D266B2004588DD /* loseWinView.m */; };
+		18829B4814D39C0B0065BF25 /* levelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18829B4714D39C0B0065BF25 /* levelManager.m */; };
+		1886EA8914DD08920089AD38 /* usrDefault.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1886EA8814DD08920089AD38 /* usrDefault.plist */; };
+		1886EA8C14DD0CBD0089AD38 /* levelConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1886EA8B14DD0CBD0089AD38 /* levelConfig.plist */; };
+		1886EA8F14DD1E160089AD38 /* mainSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886EA8E14DD1E160089AD38 /* mainSettings.m */; };
+		1886EA9914DE72410089AD38 /* skillsMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886EA9814DE72410089AD38 /* skillsMgr.m */; };
+		1886EABD14DE81D20089AD38 /* Aquarius.png in Resources */ = {isa = PBXBuildFile; fileRef = 1886EAB814DE81D20089AD38 /* Aquarius.png */; };
+		1886EABE14DE81D20089AD38 /* block_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 1886EAB914DE81D20089AD38 /* block_left.png */; };
+		1886EABF14DE81D20089AD38 /* block_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 1886EABA14DE81D20089AD38 /* block_right.png */; };
+		1886EAC014DE81D20089AD38 /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 1886EABB14DE81D20089AD38 /* block.png */; };
+		1886EAC114DE81D20089AD38 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 1886EABC14DE81D20089AD38 /* Icon-72.png */; };
+		1886EAC614DE81DC0089AD38 /* Chalkduster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1886EAC214DE81DC0089AD38 /* Chalkduster.ttf */; };
+		1886EAC714DE81DC0089AD38 /* Noteworthy.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 1886EAC314DE81DC0089AD38 /* Noteworthy.ttc */; };
+		1886EAC814DE81DC0089AD38 /* OsakaMono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1886EAC414DE81DC0089AD38 /* OsakaMono.ttf */; };
+		1886EAC914DE81DC0089AD38 /* Papyrus.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 1886EAC514DE81DC0089AD38 /* Papyrus.ttc */; };
+		1886EADB14DEB3AD0089AD38 /* stop_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 1886EAD914DEB3AD0089AD38 /* stop_active.png */; };
+		1886EADC14DEB3AD0089AD38 /* stop_deactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 1886EADA14DEB3AD0089AD38 /* stop_deactive.png */; };
+		1886EAE414E1573A0089AD38 /* gather_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 1886EAE214E1573A0089AD38 /* gather_active.png */; };
+		1886EAE514E1573A0089AD38 /* gather_deactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 1886EAE314E1573A0089AD38 /* gather_deactive.png */; };
 		18D162A414CD85810070A3BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D162A314CD85810070A3BA /* UIKit.framework */; };
 		18D162A614CD85810070A3BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D162A514CD85810070A3BA /* Foundation.framework */; };
 		18D162A814CD85810070A3BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D162A714CD85810070A3BA /* CoreGraphics.framework */; };
@@ -21,6 +44,8 @@
 		18D162C414CD85820070A3BA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D162A914CD85810070A3BA /* CoreData.framework */; };
 		18D162CC14CD85820070A3BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18D162CA14CD85820070A3BA /* InfoPlist.strings */; };
 		18D162CF14CD85820070A3BA /* llTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D162CE14CD85820070A3BA /* llTests.m */; };
+		18D162DA14CD85BC0070A3BA /* welcome.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D162D914CD85BC0070A3BA /* welcome.m */; };
+		18D162E114CD95970070A3BA /* mainGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D162E014CD95970070A3BA /* mainGameView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,24 +59,59 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1850258914CED651004588DD /* FloorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloorController.h; sourceTree = "<group>"; };
+		1850258A14CED651004588DD /* FloorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloorController.m; sourceTree = "<group>"; };
+		1850258D14CEDD89004588DD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1850259A14D03BB0004588DD /* PauseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseViewController.h; sourceTree = "<group>"; };
+		1850259B14D03BB0004588DD /* PauseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseViewController.m; sourceTree = "<group>"; };
+		185025A114D191B1004588DD /* FloorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloorManager.h; sourceTree = "<group>"; };
+		185025A214D191B1004588DD /* FloorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloorManager.m; sourceTree = "<group>"; };
+		185025A414D266B2004588DD /* loseWinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loseWinView.h; sourceTree = "<group>"; };
+		185025A514D266B2004588DD /* loseWinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loseWinView.m; sourceTree = "<group>"; };
+		18829B4614D39C0B0065BF25 /* levelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = levelManager.h; sourceTree = "<group>"; };
+		18829B4714D39C0B0065BF25 /* levelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = levelManager.m; sourceTree = "<group>"; };
+		1886EA8814DD08920089AD38 /* usrDefault.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = usrDefault.plist; sourceTree = "<group>"; };
+		1886EA8B14DD0CBD0089AD38 /* levelConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = levelConfig.plist; sourceTree = "<group>"; };
+		1886EA8D14DD1E160089AD38 /* mainSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainSettings.h; sourceTree = "<group>"; };
+		1886EA8E14DD1E160089AD38 /* mainSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainSettings.m; sourceTree = "<group>"; };
+		1886EA9714DE72410089AD38 /* skillsMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = skillsMgr.h; path = skills/skillsMgr.h; sourceTree = "<group>"; };
+		1886EA9814DE72410089AD38 /* skillsMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = skillsMgr.m; path = skills/skillsMgr.m; sourceTree = "<group>"; };
+		1886EAB814DE81D20089AD38 /* Aquarius.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Aquarius.png; path = image/Aquarius.png; sourceTree = "<group>"; };
+		1886EAB914DE81D20089AD38 /* block_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = block_left.png; path = image/block_left.png; sourceTree = "<group>"; };
+		1886EABA14DE81D20089AD38 /* block_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = block_right.png; path = image/block_right.png; sourceTree = "<group>"; };
+		1886EABB14DE81D20089AD38 /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = block.png; path = image/block.png; sourceTree = "<group>"; };
+		1886EABC14DE81D20089AD38 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "image/Icon-72.png"; sourceTree = "<group>"; };
+		1886EAC214DE81DC0089AD38 /* Chalkduster.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Chalkduster.ttf; path = fonts/Chalkduster.ttf; sourceTree = "<group>"; };
+		1886EAC314DE81DC0089AD38 /* Noteworthy.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Noteworthy.ttc; path = fonts/Noteworthy.ttc; sourceTree = "<group>"; };
+		1886EAC414DE81DC0089AD38 /* OsakaMono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = OsakaMono.ttf; path = fonts/OsakaMono.ttf; sourceTree = "<group>"; };
+		1886EAC514DE81DC0089AD38 /* Papyrus.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Papyrus.ttc; path = fonts/Papyrus.ttc; sourceTree = "<group>"; };
+		1886EAD914DEB3AD0089AD38 /* stop_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stop_active.png; path = image/stop_active.png; sourceTree = "<group>"; };
+		1886EADA14DEB3AD0089AD38 /* stop_deactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stop_deactive.png; path = image/stop_deactive.png; sourceTree = "<group>"; };
+		1886EAE114E004AD0089AD38 /* errorCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = errorCodes.h; sourceTree = "<group>"; };
+		1886EAE214E1573A0089AD38 /* gather_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gather_active.png; path = image/gather_active.png; sourceTree = "<group>"; };
+		1886EAE314E1573A0089AD38 /* gather_deactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gather_deactive.png; path = image/gather_deactive.png; sourceTree = "<group>"; };
+		1886EAE614E617F20089AD38 /* mainGameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainGameView.h; sourceTree = "<group>"; };
 		18D1629F14CD85810070A3BA /* ll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D162A314CD85810070A3BA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		18D162A514CD85810070A3BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18D162A714CD85810070A3BA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		18D162A914CD85810070A3BA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		18D162AD14CD85810070A3BA /* ll-Info.plist */ = {isa = PBXFileReference; path = "ll-Info.plist"; sourceTree = "<group>"; };
+		18D162AD14CD85810070A3BA /* ll-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ll-Info.plist"; sourceTree = "<group>"; };
 		18D162AF14CD85810070A3BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18D162B114CD85810070A3BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		18D162B314CD85810070A3BA /* ll-Prefix.pch */ = {isa = PBXFileReference; path = "ll-Prefix.pch"; sourceTree = "<group>"; };
-		18D162B414CD85810070A3BA /* fgameAppDelegate.h */ = {isa = PBXFileReference; path = fgameAppDelegate.h; sourceTree = "<group>"; };
+		18D162B314CD85810070A3BA /* ll-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ll-Prefix.pch"; sourceTree = "<group>"; };
+		18D162B414CD85810070A3BA /* fgameAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fgameAppDelegate.h; sourceTree = "<group>"; };
 		18D162B514CD85810070A3BA /* fgameAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fgameAppDelegate.m; sourceTree = "<group>"; };
 		18D162B814CD85810070A3BA /* ll.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ll.xcdatamodel; sourceTree = "<group>"; };
 		18D162BF14CD85810070A3BA /* llTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = llTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D162C014CD85810070A3BA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		18D162C914CD85820070A3BA /* llTests-Info.plist */ = {isa = PBXFileReference; path = "llTests-Info.plist"; sourceTree = "<group>"; };
+		18D162C914CD85820070A3BA /* llTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "llTests-Info.plist"; sourceTree = "<group>"; };
 		18D162CB14CD85820070A3BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		18D162CD14CD85820070A3BA /* llTests.h */ = {isa = PBXFileReference; path = llTests.h; sourceTree = "<group>"; };
+		18D162CD14CD85820070A3BA /* llTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = llTests.h; sourceTree = "<group>"; };
 		18D162CE14CD85820070A3BA /* llTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = llTests.m; sourceTree = "<group>"; };
+		18D162D814CD85BC0070A3BA /* welcome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = welcome.h; sourceTree = "<group>"; };
+		18D162D914CD85BC0070A3BA /* welcome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = welcome.m; sourceTree = "<group>"; };
+		18D162E014CD95970070A3BA /* mainGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainGameView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1850258E14CEDD89004588DD /* QuartzCore.framework in Frameworks */,
 				18D162A414CD85810070A3BA /* UIKit.framework in Frameworks */,
 				18D162A614CD85810070A3BA /* Foundation.framework in Frameworks */,
 				18D162A814CD85810070A3BA /* CoreGraphics.framework in Frameworks */,
@@ -80,6 +141,100 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1886EA9014DE4EF60089AD38 /* welcome */ = {
+			isa = PBXGroup;
+			children = (
+				18D162D814CD85BC0070A3BA /* welcome.h */,
+				18D162D914CD85BC0070A3BA /* welcome.m */,
+			);
+			name = welcome;
+			sourceTree = "<group>";
+		};
+		1886EA9114DE4F260089AD38 /* mainview */ = {
+			isa = PBXGroup;
+			children = (
+				1886EAE614E617F20089AD38 /* mainGameView.h */,
+				18D162E014CD95970070A3BA /* mainGameView.m */,
+				1850259A14D03BB0004588DD /* PauseViewController.h */,
+				1850259B14D03BB0004588DD /* PauseViewController.m */,
+			);
+			name = mainview;
+			sourceTree = "<group>";
+		};
+		1886EA9214DE4F490089AD38 /* floor */ = {
+			isa = PBXGroup;
+			children = (
+				185025A114D191B1004588DD /* FloorManager.h */,
+				185025A214D191B1004588DD /* FloorManager.m */,
+				1850258914CED651004588DD /* FloorController.h */,
+				1850258A14CED651004588DD /* FloorController.m */,
+			);
+			name = floor;
+			sourceTree = "<group>";
+		};
+		1886EA9314DE4F6D0089AD38 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				1886EA8D14DD1E160089AD38 /* mainSettings.h */,
+				1886EA8E14DD1E160089AD38 /* mainSettings.m */,
+			);
+			name = settings;
+			sourceTree = "<group>";
+		};
+		1886EA9414DE4F7F0089AD38 /* loseWin */ = {
+			isa = PBXGroup;
+			children = (
+				185025A414D266B2004588DD /* loseWinView.h */,
+				185025A514D266B2004588DD /* loseWinView.m */,
+			);
+			name = loseWin;
+			sourceTree = "<group>";
+		};
+		1886EA9514DE4FAE0089AD38 /* levelMgr */ = {
+			isa = PBXGroup;
+			children = (
+				18829B4614D39C0B0065BF25 /* levelManager.h */,
+				18829B4714D39C0B0065BF25 /* levelManager.m */,
+			);
+			name = levelMgr;
+			sourceTree = "<group>";
+		};
+		1886EA9614DE71F80089AD38 /* skillsMgr */ = {
+			isa = PBXGroup;
+			children = (
+				1886EA9714DE72410089AD38 /* skillsMgr.h */,
+				1886EA9814DE72410089AD38 /* skillsMgr.m */,
+			);
+			name = skillsMgr;
+			sourceTree = "<group>";
+		};
+		1886EAA614DE817C0089AD38 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				1886EAB814DE81D20089AD38 /* Aquarius.png */,
+				1886EAB914DE81D20089AD38 /* block_left.png */,
+				1886EAD914DEB3AD0089AD38 /* stop_active.png */,
+				1886EADA14DEB3AD0089AD38 /* stop_deactive.png */,
+				1886EABA14DE81D20089AD38 /* block_right.png */,
+				1886EABB14DE81D20089AD38 /* block.png */,
+				1886EABC14DE81D20089AD38 /* Icon-72.png */,
+				1886EAE214E1573A0089AD38 /* gather_active.png */,
+				1886EAE314E1573A0089AD38 /* gather_deactive.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		1886EAAF14DE819D0089AD38 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1886EAC214DE81DC0089AD38 /* Chalkduster.ttf */,
+				1886EAC314DE81DC0089AD38 /* Noteworthy.ttc */,
+				1886EAC414DE81DC0089AD38 /* OsakaMono.ttf */,
+				1886EAC514DE81DC0089AD38 /* Papyrus.ttc */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
 		18D1629414CD85810070A3BA = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +259,7 @@
 			children = (
 				18D162A314CD85810070A3BA /* UIKit.framework */,
 				18D162A514CD85810070A3BA /* Foundation.framework */,
+				1850258D14CEDD89004588DD /* QuartzCore.framework */,
 				18D162A714CD85810070A3BA /* CoreGraphics.framework */,
 				18D162A914CD85810070A3BA /* CoreData.framework */,
 				18D162C014CD85810070A3BA /* SenTestingKit.framework */,
@@ -114,10 +270,20 @@
 		18D162AB14CD85810070A3BA /* ll */ = {
 			isa = PBXGroup;
 			children = (
+				1886EAAF14DE819D0089AD38 /* fonts */,
+				1886EAA614DE817C0089AD38 /* images */,
+				1886EA9614DE71F80089AD38 /* skillsMgr */,
+				1886EA9514DE4FAE0089AD38 /* levelMgr */,
+				1886EA9414DE4F7F0089AD38 /* loseWin */,
+				1886EA9314DE4F6D0089AD38 /* settings */,
+				1886EA9214DE4F490089AD38 /* floor */,
+				1886EA9114DE4F260089AD38 /* mainview */,
+				1886EA9014DE4EF60089AD38 /* welcome */,
 				18D162B414CD85810070A3BA /* fgameAppDelegate.h */,
 				18D162B514CD85810070A3BA /* fgameAppDelegate.m */,
 				18D162B714CD85810070A3BA /* ll.xcdatamodeld */,
 				18D162AC14CD85810070A3BA /* Supporting Files */,
+				1886EAE114E004AD0089AD38 /* errorCodes.h */,
 			);
 			path = ll;
 			sourceTree = "<group>";
@@ -129,6 +295,8 @@
 				18D162AE14CD85810070A3BA /* InfoPlist.strings */,
 				18D162B114CD85810070A3BA /* main.m */,
 				18D162B314CD85810070A3BA /* ll-Prefix.pch */,
+				1886EA8814DD08920089AD38 /* usrDefault.plist */,
+				1886EA8B14DD0CBD0089AD38 /* levelConfig.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -223,6 +391,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				18D162B014CD85810070A3BA /* InfoPlist.strings in Resources */,
+				1886EA8914DD08920089AD38 /* usrDefault.plist in Resources */,
+				1886EA8C14DD0CBD0089AD38 /* levelConfig.plist in Resources */,
+				1886EABD14DE81D20089AD38 /* Aquarius.png in Resources */,
+				1886EABE14DE81D20089AD38 /* block_left.png in Resources */,
+				1886EABF14DE81D20089AD38 /* block_right.png in Resources */,
+				1886EAC014DE81D20089AD38 /* block.png in Resources */,
+				1886EAC114DE81D20089AD38 /* Icon-72.png in Resources */,
+				1886EAC614DE81DC0089AD38 /* Chalkduster.ttf in Resources */,
+				1886EAC714DE81DC0089AD38 /* Noteworthy.ttc in Resources */,
+				1886EAC814DE81DC0089AD38 /* OsakaMono.ttf in Resources */,
+				1886EAC914DE81DC0089AD38 /* Papyrus.ttc in Resources */,
+				1886EADB14DEB3AD0089AD38 /* stop_active.png in Resources */,
+				1886EADC14DEB3AD0089AD38 /* stop_deactive.png in Resources */,
+				1886EAE414E1573A0089AD38 /* gather_active.png in Resources */,
+				1886EAE514E1573A0089AD38 /* gather_deactive.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +443,15 @@
 				18D162B214CD85810070A3BA /* main.m in Sources */,
 				18D162B614CD85810070A3BA /* fgameAppDelegate.m in Sources */,
 				18D162B914CD85810070A3BA /* ll.xcdatamodeld in Sources */,
+				18D162DA14CD85BC0070A3BA /* welcome.m in Sources */,
+				18D162E114CD95970070A3BA /* mainGameView.m in Sources */,
+				1850258B14CED651004588DD /* FloorController.m in Sources */,
+				1850259C14D03BB0004588DD /* PauseViewController.m in Sources */,
+				185025A314D191B2004588DD /* FloorManager.m in Sources */,
+				185025A614D266B2004588DD /* loseWinView.m in Sources */,
+				18829B4814D39C0B0065BF25 /* levelManager.m in Sources */,
+				1886EA8F14DD1E160089AD38 /* mainSettings.m in Sources */,
+				1886EA9914DE72410089AD38 /* skillsMgr.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,10 +543,13 @@
 		18D162D314CD85820070A3BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ll/ll-Prefix.pch";
 				INFOPLIST_FILE = "ll/ll-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -362,10 +557,13 @@
 		18D162D414CD85820070A3BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ll/ll-Prefix.pch";
 				INFOPLIST_FILE = "ll/ll-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -423,6 +621,7 @@
 				18D162D414CD85820070A3BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18D162D514CD85820070A3BA /* Build configuration list for PBXNativeTarget "llTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +630,7 @@
 				18D162D714CD85820070A3BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

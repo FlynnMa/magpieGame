@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>season1</key>
+	<dict>
+		<key>title</key>
+		<string>Season of the wind bird</string>
+		<key>content</key>
+		<string>The wind bird may blow out magpie away, be careful!</string>
+		<key>initialSpeed</key>
+		<real>0.3</real>
+		<key>increaseSpeed</key>
+		<real>0.04</real>
+		<key>fastSpeed</key>
+		<real>0.1</real>
+		<key>initialBirdsNum</key>
+		<integer>3</integer>
+		<key>floorsNum</key>
+		<integer>12</integer>
+		<key>badBirdType</key>
+		<string>Infection</string>
+		<key>gatherBirdsNum</key>
+		<array>
+			<integer>6</integer>
+			<integer>8</integer>
+			<integer>12</integer>
+		</array>
+	</dict>
+	<key>season2</key>
+	<dict>
+		<key>title</key>
+		<string>Season of the fire bird</string>
+		<key>content</key>
+		<string>The wind bird may blow out magpie away, be careful!</string>
+		<key>initialSpeed</key>
+		<real>0.3</real>
+		<key>increaseSpeed</key>
+		<real>0.04</real>
+		<key>fastSpeed</key>
+		<real>0.1</real>
+		<key>initialBirdsNum</key>
+		<integer>3</integer>
+		<key>FloorsNum</key>
+		<integer>12</integer>
+		<key>badBirdType</key>
+		<string>Wind</string>
+		<key>gatherBirdsNum</key>
+		<array>
+			<integer>6</integer>
+			<integer>8</integer>
+			<integer>12</integer>
+		</array>
+	</dict>
+	<key>season3</key>
+	<dict>
+		<key>title</key>
+		<string>Season of the infection birds</string>
+		<key>content</key>
+		<string>The infection bird may infection magpie to death, be careful!</string>
+		<key>initialSpeed</key>
+		<real>0.3</real>
+		<key>increaseSpeed</key>
+		<real>0.04</real>
+		<key>fastSpeed</key>
+		<real>0.1</real>
+		<key>initialBirdsNum</key>
+		<integer>3</integer>
+		<key>FloorsNum</key>
+		<integer>12</integer>
+		<key>badBirdType</key>
+		<string>Fire</string>
+		<key>gatherBirdsNum</key>
+		<array>
+			<integer>6</integer>
+			<integer>8</integer>
+			<integer>12</integer>
+		</array>
+	</dict>
+	<key>season4</key>
+	<dict>
+		<key>title</key>
+		<string>Season of the ice birds</string>
+		<key>content</key>
+		<string>The ice birds may fronzen magpie, be careful!</string>
+		<key>initialSpeed</key>
+		<real>0.3</real>
+		<key>increaseSpeed</key>
+		<real>0.04</real>
+		<key>fastSpeed</key>
+		<real>0.1</real>
+		<key>initialBirdsNum</key>
+		<integer>3</integer>
+		<key>FloorsNum</key>
+		<integer>12</integer>
+		<key>badBirdType</key>
+		<string>Ice</string>
+		<key>gatherBirdsNum</key>
+		<array>
+			<integer>6</integer>
+			<integer>8</integer>
+			<integer>12</integer>
+		</array>
+	</dict>
+</dict>
+</plist>

@@ -8,7 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface fgameAppDelegate : UIResponder <UIApplicationDelegate>
+@class welcome;
+@class mainGameView;
+
+@interface fgameAppDelegate : UIResponder <UIApplicationDelegate> {
+    welcome            *welcomeCtl;
+    mainGameView       *gameView;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

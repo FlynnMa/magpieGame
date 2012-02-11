@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>highScore</key>
+	<integer>0</integer>
+	<key>score</key>
+	<integer>0</integer>
+	<key>season</key>
+	<integer>1</integer>
+	<key>level</key>
+	<integer>0</integer>
+	<key>version</key>
+	<string>0.1.5.0.0</string>
+	<key>help</key>
+	<string>The purpose for magpies is to build a long bridge to cross the Galaxy, across the year of four season. Each season have 3 levels. 12 magpies can be composed into a small bridge, enough small bridge will one level.</string>
+	<key>mainViewLabelHeight</key>
+	<integer>50</integer>
+	<key>mainViewLableHeightIphone</key>
+	<integer>22</integer>
+	<key>mainViewLabelStartY</key>
+	<integer>0</integer>
+	<key>mainViewLabelStartYIphone</key>
+	<integer>0</integer>
+	<key>mainViewLabelFontSize</key>
+	<integer>36</integer>
+	<key>mainViewLabelFontSizeIphone</key>
+	<integer>18</integer>
+	<key>birdsBridgeNumPerLvl</key>
+	<integer>12</integer>
+	<key>floorNum</key>
+	<integer>12</integer>
+	<key>skillsResources</key>
+	<dict>
+		<key>stopActive</key>
+		<string>stop_active</string>
+		<key>stopDeactive</key>
+		<string>stop_deactive</string>
+		<key>gatherActive</key>
+		<string>gather_active</string>
+		<key>gatherDeactive</key>
+		<string>gather_deactive</string>
+	</dict>
+</dict>
+</plist>

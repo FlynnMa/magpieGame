@@ -1,2 +1,10 @@
-/* Localized versions of Info.plist keys */
+"score" = "score:";
+"level" = "level:";
+"duration" = "duration:";
+"season" = "season:";
 
+"h2start" = "tap or two finger touch to start game";
+"h2setting" = "swip to enter settings";
+
+"successinfo" = "Congratulations!You win!";
+"failedinfo" = "You lose!";
