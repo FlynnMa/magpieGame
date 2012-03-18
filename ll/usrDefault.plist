@@ -9,9 +9,9 @@
 	<key>season</key>
 	<integer>1</integer>
 	<key>level</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>version</key>
-	<string>0.1.5.0.0</string>
+	<string>0.2.1.0</string>
 	<key>help</key>
 	<string>The purpose for magpies is to build a long bridge to cross the Galaxy, across the year of four season. Each season have 3 levels. 12 magpies can be composed into a small bridge, enough small bridge will one level.</string>
 	<key>mainViewLabelHeight</key>
@@ -30,6 +30,8 @@
 	<integer>12</integer>
 	<key>floorNum</key>
 	<integer>12</integer>
+	<key>floorBirdsNum</key>
+	<integer>12</integer>
 	<key>skillsResources</key>
 	<dict>
 		<key>stopActive</key>
@@ -40,6 +42,120 @@
 		<string>gather_active</string>
 		<key>gatherDeactive</key>
 		<string>gather_deactive</string>
+	</dict>
+	<key>season1</key>
+	<dict>
+		<key>initialSpeed</key>
+		<real>0.3</real>
+		<key>increaseSpeed</key>
+		<real>0.04</real>
+		<key>fastSpeed</key>
+		<real>0.1</real>
+		<key>initialBirdsNum</key>
+		<integer>3</integer>
+		<key>floorsNum</key>
+		<integer>12</integer>
+		<key>badBirdType</key>
+		<string>Infection</string>
+		<key>gatherBirdsNum</key>
+		<array>
+			<integer>6</integer>
+			<integer>8</integer>
+			<integer>12</integer>
+		</array>
+		<key>lock</key>
+		<false/>
+		<key>floorsToGenrateSpecial</key>
+		<integer>3</integer>
+	</dict>
+	<key>season2</key>
+	<dict>
+		<key>initialSpeed</key>
+		<real>0.3</real>
+		<key>increaseSpeed</key>
+		<real>0.04</real>
+		<key>fastSpeed</key>
+		<real>0.1</real>
+		<key>initialBirdsNum</key>
+		<integer>3</integer>
+		<key>FloorsNum</key>
+		<integer>12</integer>
+		<key>badBirdType</key>
+		<string>Wind</string>
+		<key>gatherBirdsNum</key>
+		<array>
+			<integer>6</integer>
+			<integer>8</integer>
+			<integer>12</integer>
+		</array>
+		<key>lock</key>
+		<true/>
+	</dict>
+	<key>season3</key>
+	<dict>
+		<key>initialSpeed</key>
+		<real>0.3</real>
+		<key>increaseSpeed</key>
+		<real>0.04</real>
+		<key>fastSpeed</key>
+		<real>0.1</real>
+		<key>initialBirdsNum</key>
+		<integer>3</integer>
+		<key>FloorsNum</key>
+		<integer>12</integer>
+		<key>badBirdType</key>
+		<string>Fire</string>
+		<key>gatherBirdsNum</key>
+		<array>
+			<integer>6</integer>
+			<integer>8</integer>
+			<integer>12</integer>
+		</array>
+		<key>lock</key>
+		<true/>
+	</dict>
+	<key>season4</key>
+	<dict>
+		<key>initialSpeed</key>
+		<real>0.3</real>
+		<key>increaseSpeed</key>
+		<real>0.04</real>
+		<key>fastSpeed</key>
+		<real>0.1</real>
+		<key>initialBirdsNum</key>
+		<integer>3</integer>
+		<key>FloorsNum</key>
+		<integer>12</integer>
+		<key>badBirdType</key>
+		<string>Ice</string>
+		<key>gatherBirdsNum</key>
+		<array>
+			<integer>6</integer>
+			<integer>8</integer>
+			<integer>12</integer>
+		</array>
+		<key>lock</key>
+		<true/>
+	</dict>
+	<key>magpieResources</key>
+	<dict>
+		<key>DickFace</key>
+		<string>magpieBlue</string>
+		<key>DickFinder</key>
+		<string>magpieElectric</string>
+		<key>DickTator</key>
+		<string>magpieYellow</string>
+		<key>DickBender</key>
+		<string>magpieRed</string>
+	</dict>
+	<key>magpieSpecialResources</key>
+	<dict>
+		<key>SpecialStar</key>
+		<string>magpieStar</string>
+		<key>SpecialLove</key>
+		<string>magpieLove</string>
+		<key>SpecialEnegy</key>
+		<string>magpieEnegy</string>
 	</dict>
 </dict>
 </plist>

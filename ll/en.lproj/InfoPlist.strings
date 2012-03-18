@@ -1,5 +1,5 @@
 "score" = "score:";
-"level" = "level:";
+"level" = "day:";
 "duration" = "duration:";
 "season" = "season:";
 
@@ -8,3 +8,25 @@
 
 "successinfo" = "Congratulations!You win!";
 "failedinfo" = "You lose!";
+"winLoseContinueButton" = "continue";
+"winLoseBackButton" = "back";
+
+"season1"      = "Season 1";
+"season1Title" = "Season of the wind";
+"season1Desc" = "The cloud will gone with the wind";
+
+"season2"      = "Season 2";
+"season2Title" = "Season of the sun";
+"season2Desc"  = "The dark will gone with the sun";
+
+"season3"      = "Season 3";
+"season3Title" = "Season of the moon";
+"season3Desc"  = "The shadow will gone with the moon";
+
+"season4"      = "Season 4";
+"season4Title" = "Season of the star";
+"season4Desc" = "The star will shine for the road";
+
+"newGame"     = "new game";
+"continue"    = "continue";
+"howToPlay"   = "how to play";

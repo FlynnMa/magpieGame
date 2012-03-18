@@ -19,7 +19,20 @@
     id          startGameTarget;
 }
 
+/*
+ * @brief showSuccess
+ * @detail this function draw a success view and show level choice
+ * @return none
+ * @invoke mainGameView
+ */
 -(void)showSuccess;
+
+/*
+ * @brief showFailed
+ * @detail this function draw a faild view and show continue/back choice
+ * @return none
+ * @invoke mainGameView
+ */
 -(void)showFailed;
 
 -(void)setStartGameSelector:(SEL)aSlector

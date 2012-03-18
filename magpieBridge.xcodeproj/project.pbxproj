@@ -7,21 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1850258B14CED651004588DD /* FloorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850258A14CED651004588DD /* FloorController.m */; };
 		1850258E14CEDD89004588DD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1850258D14CEDD89004588DD /* QuartzCore.framework */; };
-		1850259C14D03BB0004588DD /* PauseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850259B14D03BB0004588DD /* PauseViewController.m */; };
+		1850259C14D03BB0004588DD /* pauseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850259B14D03BB0004588DD /* pauseView.m */; };
 		185025A314D191B2004588DD /* FloorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 185025A214D191B1004588DD /* FloorManager.m */; };
 		185025A614D266B2004588DD /* loseWinView.m in Sources */ = {isa = PBXBuildFile; fileRef = 185025A514D266B2004588DD /* loseWinView.m */; };
+		186A9C9114FCE9AB0064CB22 /* magpieBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 186A9C8A14FCE9AB0064CB22 /* magpieBlue.png */; };
+		186A9C9214FCE9AB0064CB22 /* magpieElectric.png in Resources */ = {isa = PBXBuildFile; fileRef = 186A9C8B14FCE9AB0064CB22 /* magpieElectric.png */; };
+		186A9C9314FCE9AB0064CB22 /* magpieEnegy.png in Resources */ = {isa = PBXBuildFile; fileRef = 186A9C8C14FCE9AB0064CB22 /* magpieEnegy.png */; };
+		186A9C9414FCE9AB0064CB22 /* magpieLove.png in Resources */ = {isa = PBXBuildFile; fileRef = 186A9C8D14FCE9AB0064CB22 /* magpieLove.png */; };
+		186A9C9514FCE9AB0064CB22 /* magpieRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 186A9C8E14FCE9AB0064CB22 /* magpieRed.png */; };
+		186A9C9614FCE9AB0064CB22 /* magpieStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 186A9C8F14FCE9AB0064CB22 /* magpieStar.png */; };
+		186A9C9714FCE9AB0064CB22 /* magpieYellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 186A9C9014FCE9AB0064CB22 /* magpieYellow.png */; };
+		187DA16115010F7500AC6159 /* buttonBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 187DA16015010F7500AC6159 /* buttonBg.png */; };
+		18820A8C14FF990E00CCB726 /* background-day.png in Resources */ = {isa = PBXBuildFile; fileRef = 18820A8A14FF990E00CCB726 /* background-day.png */; };
+		18820A8F14FF992600CCB726 /* background-night.png in Resources */ = {isa = PBXBuildFile; fileRef = 18820A8E14FF992600CCB726 /* background-night.png */; };
+		18820A9314FFB28D00CCB726 /* utilsButtonClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 18820A9214FFB28D00CCB726 /* utilsButtonClass.m */; };
 		18829B4814D39C0B0065BF25 /* levelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18829B4714D39C0B0065BF25 /* levelManager.m */; };
+		188361A51508DEEB0069E25E /* heartMagpieClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 188361A41508DEEB0069E25E /* heartMagpieClass.m */; };
 		1886EA8914DD08920089AD38 /* usrDefault.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1886EA8814DD08920089AD38 /* usrDefault.plist */; };
-		1886EA8C14DD0CBD0089AD38 /* levelConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1886EA8B14DD0CBD0089AD38 /* levelConfig.plist */; };
 		1886EA8F14DD1E160089AD38 /* mainSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886EA8E14DD1E160089AD38 /* mainSettings.m */; };
 		1886EA9914DE72410089AD38 /* skillsMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886EA9814DE72410089AD38 /* skillsMgr.m */; };
 		1886EABD14DE81D20089AD38 /* Aquarius.png in Resources */ = {isa = PBXBuildFile; fileRef = 1886EAB814DE81D20089AD38 /* Aquarius.png */; };
 		1886EABE14DE81D20089AD38 /* block_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 1886EAB914DE81D20089AD38 /* block_left.png */; };
 		1886EABF14DE81D20089AD38 /* block_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 1886EABA14DE81D20089AD38 /* block_right.png */; };
 		1886EAC014DE81D20089AD38 /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 1886EABB14DE81D20089AD38 /* block.png */; };
-		1886EAC114DE81D20089AD38 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 1886EABC14DE81D20089AD38 /* Icon-72.png */; };
 		1886EAC614DE81DC0089AD38 /* Chalkduster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1886EAC214DE81DC0089AD38 /* Chalkduster.ttf */; };
 		1886EAC714DE81DC0089AD38 /* Noteworthy.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 1886EAC314DE81DC0089AD38 /* Noteworthy.ttc */; };
 		1886EAC814DE81DC0089AD38 /* OsakaMono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1886EAC414DE81DC0089AD38 /* OsakaMono.ttf */; };
@@ -30,6 +39,10 @@
 		1886EADC14DEB3AD0089AD38 /* stop_deactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 1886EADA14DEB3AD0089AD38 /* stop_deactive.png */; };
 		1886EAE414E1573A0089AD38 /* gather_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 1886EAE214E1573A0089AD38 /* gather_active.png */; };
 		1886EAE514E1573A0089AD38 /* gather_deactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 1886EAE314E1573A0089AD38 /* gather_deactive.png */; };
+		188A441614E92F9200612E60 /* levelSelectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188A441514E92F9200612E60 /* levelSelectorView.m */; };
+		188A441914E939B300612E60 /* day1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 188A441814E939B300612E60 /* day1.jpg */; };
+		188A441B14EBED8E00612E60 /* season1-snapshort.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 188A441A14EBED8E00612E60 /* season1-snapshort.jpg */; };
+		188A446D14F0D48500612E60 /* magpieClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 188A446C14F0D48500612E60 /* magpieClass.m */; };
 		18D162A414CD85810070A3BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D162A314CD85810070A3BA /* UIKit.framework */; };
 		18D162A614CD85810070A3BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D162A514CD85810070A3BA /* Foundation.framework */; };
 		18D162A814CD85810070A3BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D162A714CD85810070A3BA /* CoreGraphics.framework */; };
@@ -59,19 +72,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1850258914CED651004588DD /* FloorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloorController.h; sourceTree = "<group>"; };
-		1850258A14CED651004588DD /* FloorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloorController.m; sourceTree = "<group>"; };
 		1850258D14CEDD89004588DD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		1850259A14D03BB0004588DD /* PauseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseViewController.h; sourceTree = "<group>"; };
-		1850259B14D03BB0004588DD /* PauseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseViewController.m; sourceTree = "<group>"; };
+		1850259A14D03BB0004588DD /* pauseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pauseView.h; sourceTree = "<group>"; };
+		1850259B14D03BB0004588DD /* pauseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pauseView.m; sourceTree = "<group>"; };
 		185025A114D191B1004588DD /* FloorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloorManager.h; sourceTree = "<group>"; };
 		185025A214D191B1004588DD /* FloorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloorManager.m; sourceTree = "<group>"; };
 		185025A414D266B2004588DD /* loseWinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loseWinView.h; sourceTree = "<group>"; };
 		185025A514D266B2004588DD /* loseWinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loseWinView.m; sourceTree = "<group>"; };
+		186A9C8A14FCE9AB0064CB22 /* magpieBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = magpieBlue.png; path = image/magpieBlue.png; sourceTree = "<group>"; };
+		186A9C8B14FCE9AB0064CB22 /* magpieElectric.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = magpieElectric.png; path = image/magpieElectric.png; sourceTree = "<group>"; };
+		186A9C8C14FCE9AB0064CB22 /* magpieEnegy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = magpieEnegy.png; path = image/magpieEnegy.png; sourceTree = "<group>"; };
+		186A9C8D14FCE9AB0064CB22 /* magpieLove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = magpieLove.png; path = image/magpieLove.png; sourceTree = "<group>"; };
+		186A9C8E14FCE9AB0064CB22 /* magpieRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = magpieRed.png; path = image/magpieRed.png; sourceTree = "<group>"; };
+		186A9C8F14FCE9AB0064CB22 /* magpieStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = magpieStar.png; path = image/magpieStar.png; sourceTree = "<group>"; };
+		186A9C9014FCE9AB0064CB22 /* magpieYellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = magpieYellow.png; path = image/magpieYellow.png; sourceTree = "<group>"; };
+		187DA16015010F7500AC6159 /* buttonBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonBg.png; path = image/buttonBg.png; sourceTree = "<group>"; };
+		18820A8A14FF990E00CCB726 /* background-day.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background-day.png"; path = "image/background-day.png"; sourceTree = "<group>"; };
+		18820A8E14FF992600CCB726 /* background-night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background-night.png"; path = "image/background-night.png"; sourceTree = "<group>"; };
+		18820A9114FFB28D00CCB726 /* utilsButtonClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utilsButtonClass.h; path = utils/utilsButtonClass.h; sourceTree = "<group>"; };
+		18820A9214FFB28D00CCB726 /* utilsButtonClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = utilsButtonClass.m; path = utils/utilsButtonClass.m; sourceTree = "<group>"; };
 		18829B4614D39C0B0065BF25 /* levelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = levelManager.h; sourceTree = "<group>"; };
 		18829B4714D39C0B0065BF25 /* levelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = levelManager.m; sourceTree = "<group>"; };
+		188361A31508DEEB0069E25E /* heartMagpieClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = heartMagpieClass.h; path = magpie/heartMagpieClass.h; sourceTree = "<group>"; };
+		188361A41508DEEB0069E25E /* heartMagpieClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = heartMagpieClass.m; path = magpie/heartMagpieClass.m; sourceTree = "<group>"; };
 		1886EA8814DD08920089AD38 /* usrDefault.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = usrDefault.plist; sourceTree = "<group>"; };
-		1886EA8B14DD0CBD0089AD38 /* levelConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = levelConfig.plist; sourceTree = "<group>"; };
 		1886EA8D14DD1E160089AD38 /* mainSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainSettings.h; sourceTree = "<group>"; };
 		1886EA8E14DD1E160089AD38 /* mainSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainSettings.m; sourceTree = "<group>"; };
 		1886EA9714DE72410089AD38 /* skillsMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = skillsMgr.h; path = skills/skillsMgr.h; sourceTree = "<group>"; };
@@ -80,7 +104,6 @@
 		1886EAB914DE81D20089AD38 /* block_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = block_left.png; path = image/block_left.png; sourceTree = "<group>"; };
 		1886EABA14DE81D20089AD38 /* block_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = block_right.png; path = image/block_right.png; sourceTree = "<group>"; };
 		1886EABB14DE81D20089AD38 /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = block.png; path = image/block.png; sourceTree = "<group>"; };
-		1886EABC14DE81D20089AD38 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "image/Icon-72.png"; sourceTree = "<group>"; };
 		1886EAC214DE81DC0089AD38 /* Chalkduster.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Chalkduster.ttf; path = fonts/Chalkduster.ttf; sourceTree = "<group>"; };
 		1886EAC314DE81DC0089AD38 /* Noteworthy.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Noteworthy.ttc; path = fonts/Noteworthy.ttc; sourceTree = "<group>"; };
 		1886EAC414DE81DC0089AD38 /* OsakaMono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = OsakaMono.ttf; path = fonts/OsakaMono.ttf; sourceTree = "<group>"; };
@@ -91,21 +114,28 @@
 		1886EAE214E1573A0089AD38 /* gather_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gather_active.png; path = image/gather_active.png; sourceTree = "<group>"; };
 		1886EAE314E1573A0089AD38 /* gather_deactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gather_deactive.png; path = image/gather_deactive.png; sourceTree = "<group>"; };
 		1886EAE614E617F20089AD38 /* mainGameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainGameView.h; sourceTree = "<group>"; };
-		18D1629F14CD85810070A3BA /* ll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ll.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		188A441414E92F9200612E60 /* levelSelectorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = levelSelectorView.h; sourceTree = "<group>"; };
+		188A441514E92F9200612E60 /* levelSelectorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = levelSelectorView.m; sourceTree = "<group>"; };
+		188A441814E939B300612E60 /* day1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = day1.jpg; path = image/day1.jpg; sourceTree = "<group>"; };
+		188A441A14EBED8E00612E60 /* season1-snapshort.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "season1-snapshort.jpg"; path = "image/season1-snapshort.jpg"; sourceTree = "<group>"; };
+		188A446914EFCE7500612E60 /* viewTags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = viewTags.h; path = ../viewTags.h; sourceTree = "<group>"; };
+		188A446B14F0D48500612E60 /* magpieClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = magpieClass.h; sourceTree = "<group>"; };
+		188A446C14F0D48500612E60 /* magpieClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = magpieClass.m; sourceTree = "<group>"; };
+		18D1629F14CD85810070A3BA /* magpieBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = magpieBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D162A314CD85810070A3BA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		18D162A514CD85810070A3BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18D162A714CD85810070A3BA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		18D162A914CD85810070A3BA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		18D162AD14CD85810070A3BA /* ll-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ll-Info.plist"; sourceTree = "<group>"; };
+		18D162AD14CD85810070A3BA /* magpieBridge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "magpieBridge-Info.plist"; sourceTree = "<group>"; };
 		18D162AF14CD85810070A3BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18D162B114CD85810070A3BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		18D162B314CD85810070A3BA /* ll-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ll-Prefix.pch"; sourceTree = "<group>"; };
+		18D162B314CD85810070A3BA /* magpieBridge-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "magpieBridge-Prefix.pch"; sourceTree = "<group>"; };
 		18D162B414CD85810070A3BA /* fgameAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fgameAppDelegate.h; sourceTree = "<group>"; };
 		18D162B514CD85810070A3BA /* fgameAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fgameAppDelegate.m; sourceTree = "<group>"; };
 		18D162B814CD85810070A3BA /* ll.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ll.xcdatamodel; sourceTree = "<group>"; };
-		18D162BF14CD85810070A3BA /* llTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = llTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18D162BF14CD85810070A3BA /* magpieBridgeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = magpieBridgeTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D162C014CD85810070A3BA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		18D162C914CD85820070A3BA /* llTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "llTests-Info.plist"; sourceTree = "<group>"; };
+		18D162C914CD85820070A3BA /* magpieBridgeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "magpieBridgeTests-Info.plist"; sourceTree = "<group>"; };
 		18D162CB14CD85820070A3BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18D162CD14CD85820070A3BA /* llTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = llTests.h; sourceTree = "<group>"; };
 		18D162CE14CD85820070A3BA /* llTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = llTests.m; sourceTree = "<group>"; };
@@ -141,6 +171,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		187D7CD215039BD000EF33D7 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				188A446914EFCE7500612E60 /* viewTags.h */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		18820A9014FFB16B00CCB726 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				18820A9114FFB28D00CCB726 /* utilsButtonClass.h */,
+				18820A9214FFB28D00CCB726 /* utilsButtonClass.m */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
 		1886EA9014DE4EF60089AD38 /* welcome */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,8 +202,8 @@
 			children = (
 				1886EAE614E617F20089AD38 /* mainGameView.h */,
 				18D162E014CD95970070A3BA /* mainGameView.m */,
-				1850259A14D03BB0004588DD /* PauseViewController.h */,
-				1850259B14D03BB0004588DD /* PauseViewController.m */,
+				1850259A14D03BB0004588DD /* pauseView.h */,
+				1850259B14D03BB0004588DD /* pauseView.m */,
 			);
 			name = mainview;
 			sourceTree = "<group>";
@@ -166,8 +213,6 @@
 			children = (
 				185025A114D191B1004588DD /* FloorManager.h */,
 				185025A214D191B1004588DD /* FloorManager.m */,
-				1850258914CED651004588DD /* FloorController.h */,
-				1850258A14CED651004588DD /* FloorController.m */,
 			);
 			name = floor;
 			sourceTree = "<group>";
@@ -195,6 +240,8 @@
 			children = (
 				18829B4614D39C0B0065BF25 /* levelManager.h */,
 				18829B4714D39C0B0065BF25 /* levelManager.m */,
+				188A441414E92F9200612E60 /* levelSelectorView.h */,
+				188A441514E92F9200612E60 /* levelSelectorView.m */,
 			);
 			name = levelMgr;
 			sourceTree = "<group>";
@@ -211,13 +258,24 @@
 		1886EAA614DE817C0089AD38 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				18820A8A14FF990E00CCB726 /* background-day.png */,
+				18820A8E14FF992600CCB726 /* background-night.png */,
+				187DA16015010F7500AC6159 /* buttonBg.png */,
+				186A9C8A14FCE9AB0064CB22 /* magpieBlue.png */,
+				186A9C8B14FCE9AB0064CB22 /* magpieElectric.png */,
+				186A9C8C14FCE9AB0064CB22 /* magpieEnegy.png */,
+				186A9C8D14FCE9AB0064CB22 /* magpieLove.png */,
+				186A9C8E14FCE9AB0064CB22 /* magpieRed.png */,
+				186A9C8F14FCE9AB0064CB22 /* magpieStar.png */,
+				186A9C9014FCE9AB0064CB22 /* magpieYellow.png */,
+				188A441814E939B300612E60 /* day1.jpg */,
+				188A441A14EBED8E00612E60 /* season1-snapshort.jpg */,
 				1886EAB814DE81D20089AD38 /* Aquarius.png */,
 				1886EAB914DE81D20089AD38 /* block_left.png */,
 				1886EAD914DEB3AD0089AD38 /* stop_active.png */,
 				1886EADA14DEB3AD0089AD38 /* stop_deactive.png */,
 				1886EABA14DE81D20089AD38 /* block_right.png */,
 				1886EABB14DE81D20089AD38 /* block.png */,
-				1886EABC14DE81D20089AD38 /* Icon-72.png */,
 				1886EAE214E1573A0089AD38 /* gather_active.png */,
 				1886EAE314E1573A0089AD38 /* gather_deactive.png */,
 			);
@@ -235,10 +293,21 @@
 			name = fonts;
 			sourceTree = "<group>";
 		};
+		188A446A14F0D3C200612E60 /* birds */ = {
+			isa = PBXGroup;
+			children = (
+				188A446B14F0D48500612E60 /* magpieClass.h */,
+				188A446C14F0D48500612E60 /* magpieClass.m */,
+				188361A31508DEEB0069E25E /* heartMagpieClass.h */,
+				188361A41508DEEB0069E25E /* heartMagpieClass.m */,
+			);
+			name = birds;
+			sourceTree = "<group>";
+		};
 		18D1629414CD85810070A3BA = {
 			isa = PBXGroup;
 			children = (
-				18D162AB14CD85810070A3BA /* ll */,
+				18D162AB14CD85810070A3BA /* magepieBridge */,
 				18D162C714CD85820070A3BA /* llTests */,
 				18D162A214CD85810070A3BA /* Frameworks */,
 				18D162A014CD85810070A3BA /* Products */,
@@ -248,8 +317,8 @@
 		18D162A014CD85810070A3BA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				18D1629F14CD85810070A3BA /* ll.app */,
-				18D162BF14CD85810070A3BA /* llTests.octest */,
+				18D1629F14CD85810070A3BA /* magpieBridge.app */,
+				18D162BF14CD85810070A3BA /* magpieBridgeTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -267,16 +336,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		18D162AB14CD85810070A3BA /* ll */ = {
+		18D162AB14CD85810070A3BA /* magepieBridge */ = {
 			isa = PBXGroup;
 			children = (
-				1886EAAF14DE819D0089AD38 /* fonts */,
 				1886EAA614DE817C0089AD38 /* images */,
+				1886EAAF14DE819D0089AD38 /* fonts */,
+				187D7CD215039BD000EF33D7 /* common */,
+				18820A9014FFB16B00CCB726 /* utils */,
 				1886EA9614DE71F80089AD38 /* skillsMgr */,
 				1886EA9514DE4FAE0089AD38 /* levelMgr */,
 				1886EA9414DE4F7F0089AD38 /* loseWin */,
 				1886EA9314DE4F6D0089AD38 /* settings */,
 				1886EA9214DE4F490089AD38 /* floor */,
+				188A446A14F0D3C200612E60 /* birds */,
 				1886EA9114DE4F260089AD38 /* mainview */,
 				1886EA9014DE4EF60089AD38 /* welcome */,
 				18D162B414CD85810070A3BA /* fgameAppDelegate.h */,
@@ -285,18 +357,18 @@
 				18D162AC14CD85810070A3BA /* Supporting Files */,
 				1886EAE114E004AD0089AD38 /* errorCodes.h */,
 			);
+			name = magepieBridge;
 			path = ll;
 			sourceTree = "<group>";
 		};
 		18D162AC14CD85810070A3BA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				18D162AD14CD85810070A3BA /* ll-Info.plist */,
+				18D162AD14CD85810070A3BA /* magpieBridge-Info.plist */,
 				18D162AE14CD85810070A3BA /* InfoPlist.strings */,
 				18D162B114CD85810070A3BA /* main.m */,
-				18D162B314CD85810070A3BA /* ll-Prefix.pch */,
+				18D162B314CD85810070A3BA /* magpieBridge-Prefix.pch */,
 				1886EA8814DD08920089AD38 /* usrDefault.plist */,
-				1886EA8B14DD0CBD0089AD38 /* levelConfig.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -314,7 +386,7 @@
 		18D162C814CD85820070A3BA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				18D162C914CD85820070A3BA /* llTests-Info.plist */,
+				18D162C914CD85820070A3BA /* magpieBridgeTests-Info.plist */,
 				18D162CA14CD85820070A3BA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -323,9 +395,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		18D1629E14CD85810070A3BA /* ll */ = {
+		18D1629E14CD85810070A3BA /* magpieBridge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18D162D214CD85820070A3BA /* Build configuration list for PBXNativeTarget "ll" */;
+			buildConfigurationList = 18D162D214CD85820070A3BA /* Build configuration list for PBXNativeTarget "magpieBridge" */;
 			buildPhases = (
 				18D1629B14CD85810070A3BA /* Sources */,
 				18D1629C14CD85810070A3BA /* Frameworks */,
@@ -335,14 +407,14 @@
 			);
 			dependencies = (
 			);
-			name = ll;
+			name = magpieBridge;
 			productName = ll;
-			productReference = 18D1629F14CD85810070A3BA /* ll.app */;
+			productReference = 18D1629F14CD85810070A3BA /* magpieBridge.app */;
 			productType = "com.apple.product-type.application";
 		};
-		18D162BE14CD85810070A3BA /* llTests */ = {
+		18D162BE14CD85810070A3BA /* magpieBridgeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18D162D514CD85820070A3BA /* Build configuration list for PBXNativeTarget "llTests" */;
+			buildConfigurationList = 18D162D514CD85820070A3BA /* Build configuration list for PBXNativeTarget "magpieBridgeTests" */;
 			buildPhases = (
 				18D162BA14CD85810070A3BA /* Sources */,
 				18D162BB14CD85810070A3BA /* Frameworks */,
@@ -354,9 +426,9 @@
 			dependencies = (
 				18D162C614CD85820070A3BA /* PBXTargetDependency */,
 			);
-			name = llTests;
+			name = magpieBridgeTests;
 			productName = llTests;
-			productReference = 18D162BF14CD85810070A3BA /* llTests.octest */;
+			productReference = 18D162BF14CD85810070A3BA /* magpieBridgeTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -367,7 +439,7 @@
 			attributes = {
 				LastUpgradeCheck = 0420;
 			};
-			buildConfigurationList = 18D1629914CD85810070A3BA /* Build configuration list for PBXProject "ll" */;
+			buildConfigurationList = 18D1629914CD85810070A3BA /* Build configuration list for PBXProject "magpieBridge" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -379,8 +451,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				18D1629E14CD85810070A3BA /* ll */,
-				18D162BE14CD85810070A3BA /* llTests */,
+				18D1629E14CD85810070A3BA /* magpieBridge */,
+				18D162BE14CD85810070A3BA /* magpieBridgeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -392,12 +464,10 @@
 			files = (
 				18D162B014CD85810070A3BA /* InfoPlist.strings in Resources */,
 				1886EA8914DD08920089AD38 /* usrDefault.plist in Resources */,
-				1886EA8C14DD0CBD0089AD38 /* levelConfig.plist in Resources */,
 				1886EABD14DE81D20089AD38 /* Aquarius.png in Resources */,
 				1886EABE14DE81D20089AD38 /* block_left.png in Resources */,
 				1886EABF14DE81D20089AD38 /* block_right.png in Resources */,
 				1886EAC014DE81D20089AD38 /* block.png in Resources */,
-				1886EAC114DE81D20089AD38 /* Icon-72.png in Resources */,
 				1886EAC614DE81DC0089AD38 /* Chalkduster.ttf in Resources */,
 				1886EAC714DE81DC0089AD38 /* Noteworthy.ttc in Resources */,
 				1886EAC814DE81DC0089AD38 /* OsakaMono.ttf in Resources */,
@@ -406,6 +476,18 @@
 				1886EADC14DEB3AD0089AD38 /* stop_deactive.png in Resources */,
 				1886EAE414E1573A0089AD38 /* gather_active.png in Resources */,
 				1886EAE514E1573A0089AD38 /* gather_deactive.png in Resources */,
+				188A441914E939B300612E60 /* day1.jpg in Resources */,
+				188A441B14EBED8E00612E60 /* season1-snapshort.jpg in Resources */,
+				186A9C9114FCE9AB0064CB22 /* magpieBlue.png in Resources */,
+				186A9C9214FCE9AB0064CB22 /* magpieElectric.png in Resources */,
+				186A9C9314FCE9AB0064CB22 /* magpieEnegy.png in Resources */,
+				186A9C9414FCE9AB0064CB22 /* magpieLove.png in Resources */,
+				186A9C9514FCE9AB0064CB22 /* magpieRed.png in Resources */,
+				186A9C9614FCE9AB0064CB22 /* magpieStar.png in Resources */,
+				186A9C9714FCE9AB0064CB22 /* magpieYellow.png in Resources */,
+				18820A8C14FF990E00CCB726 /* background-day.png in Resources */,
+				18820A8F14FF992600CCB726 /* background-night.png in Resources */,
+				187DA16115010F7500AC6159 /* buttonBg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,13 +527,16 @@
 				18D162B914CD85810070A3BA /* ll.xcdatamodeld in Sources */,
 				18D162DA14CD85BC0070A3BA /* welcome.m in Sources */,
 				18D162E114CD95970070A3BA /* mainGameView.m in Sources */,
-				1850258B14CED651004588DD /* FloorController.m in Sources */,
-				1850259C14D03BB0004588DD /* PauseViewController.m in Sources */,
+				1850259C14D03BB0004588DD /* pauseView.m in Sources */,
 				185025A314D191B2004588DD /* FloorManager.m in Sources */,
 				185025A614D266B2004588DD /* loseWinView.m in Sources */,
 				18829B4814D39C0B0065BF25 /* levelManager.m in Sources */,
 				1886EA8F14DD1E160089AD38 /* mainSettings.m in Sources */,
 				1886EA9914DE72410089AD38 /* skillsMgr.m in Sources */,
+				188A441614E92F9200612E60 /* levelSelectorView.m in Sources */,
+				188A446D14F0D48500612E60 /* magpieClass.m in Sources */,
+				18820A9314FFB28D00CCB726 /* utilsButtonClass.m in Sources */,
+				188361A51508DEEB0069E25E /* heartMagpieClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,7 +553,7 @@
 /* Begin PBXTargetDependency section */
 		18D162C614CD85820070A3BA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 18D1629E14CD85810070A3BA /* ll */;
+			target = 18D1629E14CD85810070A3BA /* magpieBridge */;
 			targetProxy = 18D162C514CD85820070A3BA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -545,10 +630,10 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ll/ll-Prefix.pch";
-				INFOPLIST_FILE = "ll/ll-Info.plist";
+				GCC_PREFIX_HEADER = "ll/magpieBridge-Prefix.pch";
+				INFOPLIST_FILE = "ll/magpieBridge-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = magpieBridge;
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
@@ -559,10 +644,10 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ll/ll-Prefix.pch";
-				INFOPLIST_FILE = "ll/ll-Info.plist";
+				GCC_PREFIX_HEADER = "ll/magpieBridge-Prefix.pch";
+				INFOPLIST_FILE = "ll/magpieBridge-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = magpieBridge;
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
@@ -578,8 +663,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ll/ll-Prefix.pch";
-				INFOPLIST_FILE = "llTests/llTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "llTests/magpieBridgeTests-Info.plist";
+				PRODUCT_NAME = magpieBridgeTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -595,8 +680,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ll/ll-Prefix.pch";
-				INFOPLIST_FILE = "llTests/llTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "llTests/magpieBridgeTests-Info.plist";
+				PRODUCT_NAME = magpieBridgeTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -605,7 +690,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		18D1629914CD85810070A3BA /* Build configuration list for PBXProject "ll" */ = {
+		18D1629914CD85810070A3BA /* Build configuration list for PBXProject "magpieBridge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18D162D014CD85820070A3BA /* Debug */,
@@ -614,7 +699,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		18D162D214CD85820070A3BA /* Build configuration list for PBXNativeTarget "ll" */ = {
+		18D162D214CD85820070A3BA /* Build configuration list for PBXNativeTarget "magpieBridge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18D162D314CD85820070A3BA /* Debug */,
@@ -623,7 +708,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		18D162D514CD85820070A3BA /* Build configuration list for PBXNativeTarget "llTests" */ = {
+		18D162D514CD85820070A3BA /* Build configuration list for PBXNativeTarget "magpieBridgeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18D162D614CD85820070A3BA /* Debug */,

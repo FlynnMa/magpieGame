@@ -28,11 +28,23 @@ typedef enum skillType {
     id  notifySkillTarget;
 }
 
+/*
+ * @brief initWithFrame and skilltype
+ * @detail this function initialize a skill view with frame and type
+ * @param frame the frame of view
+ * @param type  skill type
+ * @returns id
+ * @invoke by mainGameView
+ */
 -(id)initWithFrame:(CGRect)frame
          skillType:(eSkillType) type;
 
-// whether this skill is activated
-@property BOOL activate;
+/*!
+ * @brief setActive will play an relative activation animation
+ *        and change the property
+ * @invoke mainGameView
+ */
+@property (readwrite, nonatomic) BOOL activate;
 
 // how many times can this skill be used in future
 @property NSInteger count;
@@ -43,11 +55,27 @@ typedef enum skillType {
 // a help string to show how this skill been used
 @property(retain, readonly) NSString *help;
 
-// perform this skill once
--(void) perform;
-
--(void)loadResourcesByType;
-
+/*
+ * @brief registerNotifySkill
+ * @detail this function register notifycation function
+ *          to listen to skill notification
+ * @invoke by mainGameView
+ */
 -(void) registerNotifySkill:(SEL)aSelector
                      target:(id)aTarget;
+
+/*
+ * @brief  this function performs the skill
+ * @detail this function will play a skill animation, and notify the skill owner
+ * @invoke mainGameView
+ */
+-(void) perform;
+
+/*
+ * @brief loadResourcesByType
+ * @detail This funciton load skill related resources about the skill
+ * @invoke initialize funciton initWithFrame:skillType:
+ */
+-(void)loadResourcesByType;
+
 @end

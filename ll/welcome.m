@@ -1,19 +1,20 @@
 //
 //  welcome.m
-//  ll
+//  magpieBridge
 //
 //  Created by Apple on 12-1-23.
-//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012年 __yunfei.studio__. All rights reserved.
 //
 
+#import "viewTags.h"
 #import "welcome.h"
 #import "mainGameView.h"
+#import "levelSelectorView.h"
+#import <QuartzCore/QuartzCore.h>
 
 #define WELCOME_STRING_SIZE    48
 
 @implementation welcome
-
-@synthesize enterView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,6 +30,7 @@
     if (self) {
         bgView = [[UIView alloc] initWithFrame:frame];
         [bgView setBackgroundColor:[UIColor blackColor]];
+        self.view.tag = magepieBridgeViewTagWelcome;
     }
     
     return self;
@@ -37,7 +39,6 @@
 - (void) dealloc{
     NSLog(@"dealloc welcome...");
     [bgView release];
-    [enterView release];
     [super release];
 }
 
@@ -55,72 +56,114 @@
 - (void)loadView
 {
     UIFont  *font;
-    UILabel *labelView;
     CGRect   viewFrame;
     CGRect   frame;
     CGSize   size;
     UIButton *button;
     CGFloat   fontSize;
+    NSString  *str;
+    CGFloat   xMargin;
+    
 
+    UIButton* (^createButtonView)(CGRect, UIFont*) = ^(CGRect rect, UIFont *aFont){
+        UIButton *aButton = nil;
+        aButton = [[UIButton buttonWithType:UIButtonTypeRoundedRect] retain];
+        aButton.layer.frame = rect;
+        aButton.layer.shadowOffset = CGSizeMake(0, 3);
+        aButton.layer.shadowRadius = 5.0;
+        aButton.layer.shadowColor = [UIColor whiteColor].CGColor;
+        aButton.layer.shadowOpacity = 0.8;
+        aButton.titleLabel.font = aFont;
+        aButton.titleLabel.textAlignment = UITextAlignmentCenter;
+        
+        CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"transform"];
+        anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+        anim.duration = 0.3;
+        anim.repeatCount = 1;
+        anim.autoreverses = YES;
+        anim.removedOnCompletion = YES;
+        anim.fromValue = [NSValue valueWithCATransform3D:CATransform3DMakeScale(0.8, 0.8, 0.8)];
+        anim.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeScale(1.2, 1.2, 1.2)];
+        [aButton.layer addAnimation:anim forKey:nil];
+        [bgView addSubview:aButton];
+        
+        return aButton;
+    };
     viewFrame = [bgView bounds];
 
     if (viewFrame.size.width >= 768) {
         fontSize = 48;
+        xMargin = 48;
     } else {
         fontSize = 24;
+        xMargin  = 24;
     }
     /* calculate label frame */
     font = [UIFont boldSystemFontOfSize: fontSize];
-    size = [@"welcome" sizeWithFont:font];
-    frame.origin = CGPointMake((viewFrame.size.width - size.width) / 2,
-                                    (viewFrame.size.height - size.height) / 2);
-    frame.size = size;
-    labelView = [[UILabel alloc] initWithFrame:frame];
-    [labelView setFont:font];
-    [labelView setTextColor:[UIColor whiteColor]];
-    [labelView setBackgroundColor:nil];
-    [labelView setText:@"welcome"];
-    [bgView addSubview:labelView];
-    [self setView:bgView];
-    [labelView release];
     
-    size = [@"play" sizeWithFont:font];
-    frame = CGRectMake( (viewFrame.size.width - size.width) / 2,
+    str = NSLocalizedStringFromTable(@"newGame", @"infoPlist", @"");
+    size = [str sizeWithFont:font];
+    frame = CGRectMake(xMargin,
                     (viewFrame.size.height / 2 - size.height) / 2,
-                       size.width, size.height);
-    button = [[UIButton buttonWithType:UIButtonTypeRoundedRect] retain];
-    button.frame = frame;
-    button.titleLabel.font = font;
-    [button setTitle:@"play" forState:UIControlStateNormal];
+                       viewFrame.size.width - xMargin * 2, size.height);
+    button = createButtonView(frame, font);
+    [button setTitle:str forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(onStart)
+     forControlEvents:UIControlEventTouchUpInside];
+    button.titleLabel.textAlignment = UITextAlignmentCenter;
+    [bgView addSubview:button];
+    [button release];
+    
+    str = NSLocalizedStringFromTable(@"continue", @"infoPlist", @"");
+    size = [str sizeWithFont:font];
+    frame = CGRectMake( xMargin,
+                       (viewFrame.size.height - size.height) / 2,
+                       viewFrame.size.width - xMargin * 2,
+                       size.height);
+    button = createButtonView(frame, font);
+    [button setTitle:str forState:UIControlStateNormal];
     [button addTarget:self action:@selector(onStart)
      forControlEvents:UIControlEventTouchUpInside];
     [bgView addSubview:button];
     [button release];
     
-    size = [@"how to play" sizeWithFont:font];
-    frame = CGRectMake( (viewFrame.size.width - size.width) / 2,
+    str = NSLocalizedStringFromTable(@"howToPlay", @"infoPlist", @"");
+    size = [str sizeWithFont:font];
+    frame = CGRectMake( xMargin,
                        (viewFrame.size.height / 2 - size.height) / 2 + viewFrame.size.height / 2,
-                       size.width, size.height);
-    button = [[UIButton buttonWithType:UIButtonTypeRoundedRect] retain];
-    button.frame = frame;
-    button.titleLabel.font = font;
-    [button setTitle:@"how to play" forState:UIControlStateNormal];
+                       viewFrame.size.width - xMargin * 2,
+                       size.height);
+    button = createButtonView(frame, font);
+    [button setTitle:str forState:UIControlStateNormal];
     [button addTarget:self action:@selector(onStart)
      forControlEvents:UIControlEventTouchUpInside];
     [bgView addSubview:button];
     [button release];
+    
+    [self setView:bgView];
 
 }
      
 -(void)onStart{
-    [UIView transitionWithView:self.view.superview duration:1
-                       options:UIViewAnimationOptionTransitionCurlUp
-                    animations:^{
-                        self.view.hidden = YES;
-                        [self.view.superview addSubview:enterView];
-                    } completion:^(BOOL finished) {
-                        [self.view removeFromSuperview];
-                    }];
+    levelSelectorView *lvlView;
+    CGRect   inFrame = self.view.frame;
+    CGRect   leftFrame  = inFrame;
+    CGRect   rightFrame = inFrame;
+
+    leftFrame.origin.x -= inFrame.size.width;
+    rightFrame.origin.x += inFrame.size.width;
+    lvlView = [[levelSelectorView alloc] initWithFrame:rightFrame];
+    [lvlView loadViews];
+    [self.view.superview addSubview:lvlView];
+    [UIView animateWithDuration:.3
+                          delay:0
+                        options:UIViewAnimationCurveEaseIn
+                     animations:^{
+                         [self.view setFrame:leftFrame];
+                         [lvlView setFrame:inFrame];
+                     } completion:^(BOOL finished) {
+                         [lvlView release];
+                     }];
 }
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.

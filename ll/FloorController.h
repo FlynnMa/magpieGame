@@ -16,13 +16,6 @@ typedef enum {
     FLOOR_BLOCK_MOVE_MAX
 }FloorBlockMoveDir;
 
-typedef enum{
-    eFLOOR_STATUS_STOPPED,
-    eFLOOR_STATUS_PAUSED,
-    eFLOOR_STATUS_PLAYING,
-    eFLOOR_STATUS_MAX
-}eFloorStatus;
-
 @interface FloorController : UIView{
     UIView              *blkBgView;
     NSMutableDictionary *imageResources;
@@ -37,18 +30,16 @@ typedef enum{
     id                  onFloorRefreshedTarget;
 }
 
-@property (assign)NSTimeInterval blkAnimateDuration;
-@property (assign)CGPoint        blkRange;
-@property(readwrite, nonatomic) eFloorStatus floorStatus;
-@property (assign)NSUInteger blkNum;
+@property (readonly, nonatomic)    CGPoint  birdsRange;
+@property (readwrite, nonatomic)NSTimeInterval birdsAnimateDuration;
+@property (assign)NSUInteger birdsNum;
 @property (assign )NSUInteger floorIndex;
 
 
-- (id)initWithFrame:(CGRect)rect;
-- (void)loadView;
--(int)activateFloorWithNum: (NSUInteger)num;
--(void)onMoveBlockTimer;
--(void)deactivateFloor;
+-(id)initWithFrame:(CGRect)rect;
+-(void)loadView;
+-(void)createBirds:(NSUInteger)num;
+-(void)onMoveBirdsTimer;
 -(void)setOnFloorRefreshedSelector:(SEL)aSelector
                         target:(id) aTarget;
 -(void)updateRangeBylowerFloorRange: (CGPoint)lowFloorRange;

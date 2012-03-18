@@ -11,43 +11,49 @@
 
 @implementation skillsMgr
 
+/* resource key definitions */
 #define kStopActiveImg      @"stopActive"
 #define kStopDeactiveImg    @"stopDeactive"
 #define kGatherActiveImg    @"gatherActive"
 #define kGatherDeactiveImg  @"gatherDeactive"
 
+/* property synthesize */
 @synthesize count, help;
 @synthesize skillType = _skillType;
-@dynamic activate;
+@synthesize activate = _activate;
 
+/*
+ * @brief initWithFrame and skilltype
+ * @detail this function initialize a skill view with frame and type
+ * @param frame the frame of view
+ * @param type  skill type
+ * @returns id
+ * @invoke by mainGameView
+ */
 -(id)initWithFrame:(CGRect)frame
               skillType:(eSkillType) type{
-    self = [self initWithFrame:frame];
-    if (self) {
-        settings = [[mainSettings alloc] init];
-        [settings loadRecords];
-        _skillType = type;
-    }
-    return self;
-}
--(id)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
+        settings = [[mainSettings sharedSettings] retain];
+        [settings loadRecords];
+        _skillType = type;
+        [self loadResourcesByType];
     }
-    
     return self;
 }
 
--(void)dealloc{
-    NSLog(@"dealloc... skillsMgr");
-    [settings release];
-    [activeImg release];
-    [deactiveImg release];
-    [super release];
-}
-
+/*
+ * @brief setActive
+ * @brief this function change the activation property,
+ *        and play cresponding animations
+ * @invoke by mainGameView
+ */
 -(void)setActivate:(BOOL)active{
-    
+
+    if (_activate == active) {
+        return;
+    }
+
     self.alpha = 0;
     if (active == YES) {
         self.backgroundColor = [UIColor colorWithPatternImage:activeImg];
@@ -62,13 +68,26 @@
                              self.alpha = 1;
                          }];
     }
-    activate = active;
+    _activate = active;
 }
 
--(BOOL)getActivate{
-    return  activate;
+/*
+ * @brief registerNotifySkill
+ * @detail this function register notifycation function
+ *          to listen to skill notification
+ * @invoke by mainGameView
+ */
+-(void) registerNotifySkill:(SEL)aSelector
+                     target:(id)aTarget{
+    notifySkill = aSelector;
+    notifySkillTarget = aTarget;
 }
 
+/*
+ * @brief touchesEnded
+ * @detail this funciton responds on the touchesEnd event
+ * @invoke by system
+ */
 -(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
     UITouch *touch = [touches anyObject];
     if (self != [touch view]) {
@@ -78,8 +97,13 @@
     [self perform];
 }
 
+/*
+ * @brief  this function performs the skill
+ * @detail this function will play a skill animation, and notify the skill owner
+ * @invoke mainGameView
+ */
 -(void) perform{
-    if (activate == NO) {
+    if (_activate == NO) {
         return;
     }
     
@@ -101,15 +125,14 @@
      
 }
 
--(void) registerNotifySkill:(SEL)aSelector
-                     target:(id)aTarget{
-    notifySkill = aSelector;
-    notifySkillTarget = aTarget;
-}
-
+/*
+ * @brief loadResourcesByType
+ * @detail This funciton load skill related resources about the skill
+ * @invoke initialize funciton initWithFrame:skillType:
+ */
 -(void)loadResourcesByType{
-    NSString *activeRes;
-    NSString *deactiveRes;
+    NSString *activeRes = nil;
+    NSString *deactiveRes = nil;
     NSString *path;
     
     switch (_skillType) {
@@ -144,5 +167,19 @@
         path = [[NSBundle mainBundle] pathForResource:deactiveRes ofType:@"png"];
         deactiveImg = [[UIImage alloc] initWithContentsOfFile:path];            
     }
+
+    self.backgroundColor = [UIColor colorWithPatternImage:deactiveImg];
 }
+
+/*
+ * @brief dealloc
+ */
+-(void)dealloc{
+    NSLog(@"dealloc... skillsMgr");
+    [settings release];
+    [activeImg release];
+    [deactiveImg release];
+    [super release];
+}
+
 @end

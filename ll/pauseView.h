@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PauseViewController : UIViewController{
-    UIView      *bgView;
+@interface pauseView : UIView{
     UILabel     *helpLabelStart;
     UILabel     *helpLabelSettings;
     CGRect       bgFrame;
@@ -20,4 +19,5 @@
 -(id)initWithFrame:(CGRect)frame;
 -(void)setStartSelector:(SEL)aSelector
                      target:(id) aTarget;
+- (void)loadView;
 @end

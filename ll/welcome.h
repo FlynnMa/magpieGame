@@ -1,6 +1,6 @@
 //
 //  welcome.h
-//  ll
+//  magpieBridge
 //
 //  Created by Apple on 12-1-23.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
@@ -11,11 +11,9 @@
 @class MainViewController;
 @interface welcome : UIViewController{
     UIView *bgView;
+    UIView *lvlSelectorView;
 }
 
 - (id) initWithFrame: (CGRect)frame;
-
-
-@property (retain) UIView *enterView;
 
 @end

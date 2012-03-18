@@ -12,12 +12,14 @@
     NSString *defaultPlistPath;
     NSString *usrPlistPath;
     NSString *levelCfgPath;
+    BOOL      isLoaded;
 }
 
 @property(readwrite, retain) NSNumber   *score;
 @property(readwrite, retain) NSNumber   *highScore;
 @property(readwrite, retain) NSNumber   *season;
 @property(readwrite, retain) NSNumber   *level;
+@property(readonly, retain) NSNumber    *floorBirdsNum;
 @property(readonly, retain)  NSString   *version;
 @property(readonly, retain) NSString    *help;
 
@@ -27,20 +29,40 @@
 @property(readonly, retain) NSNumber    *birdsBridgeNumPerLvl;
 @property(readonly, retain) NSNumber    *floorNum;
 @property(readonly, retain) NSDictionary *skillResources;
-@property(readonly, retain) NSDictionary *levelCfg;
+@property(readonly, retain) NSDictionary *magpieResources;
+@property(readonly, retain) NSDictionary *magpieSpeicalResources;
+@property(readonly, retain) NSDictionary *seasonCfg;
 
-/* load all records from file system */
+/*
+ * @brief loadRecords
+ * @detail load records from userRecord.plist and levelConfig.plist,
+ *         if userRecord.plist does not exist, create it from userDefault.plist
+ *         if userRecord.plist has different version with userDefault.plist, recreate it
+ * @return none
+ * @invoke floorManager, floorController, mainGameView
+ */
 -(BOOL) loadRecords;
 
-/* create all records, this is normally called at the first time when application
- * starts
+/*
+ * @brief  saveRecords to userRecord.plist
+ * @detail save records to userRecord.plist
+ * @return none
+ * @invoke floorManager, floorController, mainGameView
  */
--(void) createRecords;
-
-/* save all records to filesystem */
 -(void) saveRecords;
 
-/* get plist file version */
--(BOOL) getFileVersion:(NSString*)file
-                   ver:(NSString**)str;
+/*
+ * @brief   loadSeasonCfg
+ * @detail  this function loads configrations according with a season
+ * @param   seasonValue an int value for season
+ * @returns none
+ * @invoke  levelManager, levelSelectorView
+ */
+-(void)loadSeasonCfg:(int)seasonValue;
+
+/*
+ * @brief load the singleton instance
+ * @invoke floorManger, floorController, mainGameView
+ */
++(id) sharedSettings;
 @end

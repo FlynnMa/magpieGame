@@ -13,7 +13,6 @@
 
 @interface fgameAppDelegate : UIResponder <UIApplicationDelegate> {
     welcome            *welcomeCtl;
-    mainGameView       *gameView;
 }
 
 @property (strong, nonatomic) UIWindow *window;

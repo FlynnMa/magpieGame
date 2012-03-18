@@ -19,14 +19,25 @@
 @property NSUInteger currentScore;
 @property NSUInteger currentSeason;
 @property NSUInteger currentLevel;
-@property(readonly, retain, nonatomic) NSString     *title;
-@property(readonly, retain, nonatomic) NSString     *content;
 @property(readonly, retain, nonatomic) NSNumber     *initialSpeed;
 @property(readonly, retain, nonatomic) NSNumber     *increseSpeed;
 @property(readonly, retain, nonatomic) NSNumber     *fastSpeed;
 @property(readonly, retain, nonatomic) NSNumber     *initialBirdsNum;
 
--(NSUInteger)getCurrentInitialBlocks;
+/* This variable defines how many floors will generate a special magpie */
+@property(readonly, retain, nonatomic) NSNumber     *floorsPerSpecial;
 
+/*
+ * @brief   loadConfigurations
+ * @detail  load configuations about level managers
+ * @invoke  mainGameView
+ */
 -(void) loadConfigurations;
+
+/*
+ * @brief saveUserRecord
+ * @detail save season, level, score records
+ * @invoke mainGameView
+ */
+-(void) saveUserRecord;
 @end
