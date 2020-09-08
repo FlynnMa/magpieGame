@@ -2,7 +2,7 @@
 //  FloorManager.m
 //  ll
 //
-//  Created by Apple on 12-1-26.
+//  Created by Yunfei on 12-1-26.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
@@ -426,7 +426,7 @@ const NSTimeInterval FloorDurations[FLOOR_NUM] = {
  */
 -(void)setCurrentActiveFloorIndex:(NSInteger)activeFloorIndex{
     
-    NSLog(@"setCurrentActiveFloor%d", activeFloorIndex);
+    NSLog(@"setCurrentActiveFloor%d", (long)activeFloorIndex);
     if ((0 != _currentActiveFloorIndex) && \
         (_currentActiveFloorIndex >= [Floors count])) {
         return;

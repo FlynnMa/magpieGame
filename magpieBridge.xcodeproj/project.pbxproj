@@ -39,7 +39,6 @@
 		1886EADC14DEB3AD0089AD38 /* stop_deactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 1886EADA14DEB3AD0089AD38 /* stop_deactive.png */; };
 		1886EAE414E1573A0089AD38 /* gather_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 1886EAE214E1573A0089AD38 /* gather_active.png */; };
 		1886EAE514E1573A0089AD38 /* gather_deactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 1886EAE314E1573A0089AD38 /* gather_deactive.png */; };
-		188A441614E92F9200612E60 /* levelSelectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188A441514E92F9200612E60 /* levelSelectorView.m */; };
 		188A441914E939B300612E60 /* day1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 188A441814E939B300612E60 /* day1.jpg */; };
 		188A441B14EBED8E00612E60 /* season1-snapshort.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 188A441A14EBED8E00612E60 /* season1-snapshort.jpg */; };
 		188A446D14F0D48500612E60 /* magpieClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 188A446C14F0D48500612E60 /* magpieClass.m */; };
@@ -55,8 +54,6 @@
 		18D162C214CD85810070A3BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D162A314CD85810070A3BA /* UIKit.framework */; };
 		18D162C314CD85820070A3BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D162A514CD85810070A3BA /* Foundation.framework */; };
 		18D162C414CD85820070A3BA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D162A914CD85810070A3BA /* CoreData.framework */; };
-		18D162CC14CD85820070A3BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18D162CA14CD85820070A3BA /* InfoPlist.strings */; };
-		18D162CF14CD85820070A3BA /* llTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D162CE14CD85820070A3BA /* llTests.m */; };
 		18D162DA14CD85BC0070A3BA /* welcome.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D162D914CD85BC0070A3BA /* welcome.m */; };
 		18D162E114CD95970070A3BA /* mainGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D162E014CD95970070A3BA /* mainGameView.m */; };
 /* End PBXBuildFile section */
@@ -114,8 +111,6 @@
 		1886EAE214E1573A0089AD38 /* gather_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gather_active.png; path = image/gather_active.png; sourceTree = "<group>"; };
 		1886EAE314E1573A0089AD38 /* gather_deactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gather_deactive.png; path = image/gather_deactive.png; sourceTree = "<group>"; };
 		1886EAE614E617F20089AD38 /* mainGameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainGameView.h; sourceTree = "<group>"; };
-		188A441414E92F9200612E60 /* levelSelectorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = levelSelectorView.h; sourceTree = "<group>"; };
-		188A441514E92F9200612E60 /* levelSelectorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = levelSelectorView.m; sourceTree = "<group>"; };
 		188A441814E939B300612E60 /* day1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = day1.jpg; path = image/day1.jpg; sourceTree = "<group>"; };
 		188A441A14EBED8E00612E60 /* season1-snapshort.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "season1-snapshort.jpg"; path = "image/season1-snapshort.jpg"; sourceTree = "<group>"; };
 		188A446914EFCE7500612E60 /* viewTags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = viewTags.h; path = ../viewTags.h; sourceTree = "<group>"; };
@@ -135,10 +130,6 @@
 		18D162B814CD85810070A3BA /* ll.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ll.xcdatamodel; sourceTree = "<group>"; };
 		18D162BF14CD85810070A3BA /* magpieBridgeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = magpieBridgeTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D162C014CD85810070A3BA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		18D162C914CD85820070A3BA /* magpieBridgeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "magpieBridgeTests-Info.plist"; sourceTree = "<group>"; };
-		18D162CB14CD85820070A3BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		18D162CD14CD85820070A3BA /* llTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = llTests.h; sourceTree = "<group>"; };
-		18D162CE14CD85820070A3BA /* llTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = llTests.m; sourceTree = "<group>"; };
 		18D162D814CD85BC0070A3BA /* welcome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = welcome.h; sourceTree = "<group>"; };
 		18D162D914CD85BC0070A3BA /* welcome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = welcome.m; sourceTree = "<group>"; };
 		18D162E014CD95970070A3BA /* mainGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainGameView.m; sourceTree = "<group>"; };
@@ -240,8 +231,6 @@
 			children = (
 				18829B4614D39C0B0065BF25 /* levelManager.h */,
 				18829B4714D39C0B0065BF25 /* levelManager.m */,
-				188A441414E92F9200612E60 /* levelSelectorView.h */,
-				188A441514E92F9200612E60 /* levelSelectorView.m */,
 			);
 			name = levelMgr;
 			sourceTree = "<group>";
@@ -308,7 +297,6 @@
 			isa = PBXGroup;
 			children = (
 				18D162AB14CD85810070A3BA /* magepieBridge */,
-				18D162C714CD85820070A3BA /* llTests */,
 				18D162A214CD85810070A3BA /* Frameworks */,
 				18D162A014CD85810070A3BA /* Products */,
 			);
@@ -373,25 +361,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		18D162C714CD85820070A3BA /* llTests */ = {
-			isa = PBXGroup;
-			children = (
-				18D162CD14CD85820070A3BA /* llTests.h */,
-				18D162CE14CD85820070A3BA /* llTests.m */,
-				18D162C814CD85820070A3BA /* Supporting Files */,
-			);
-			path = llTests;
-			sourceTree = "<group>";
-		};
-		18D162C814CD85820070A3BA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				18D162C914CD85820070A3BA /* magpieBridgeTests-Info.plist */,
-				18D162CA14CD85820070A3BA /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -429,7 +398,7 @@
 			name = magpieBridgeTests;
 			productName = llTests;
 			productReference = 18D162BF14CD85810070A3BA /* magpieBridgeTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -437,7 +406,8 @@
 		18D1629614CD85810070A3BA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastTestingUpgradeCheck = 0610;
+				LastUpgradeCheck = 0610;
 			};
 			buildConfigurationList = 18D1629914CD85810070A3BA /* Build configuration list for PBXProject "magpieBridge" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -495,7 +465,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18D162CC14CD85820070A3BA /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,7 +502,6 @@
 				18829B4814D39C0B0065BF25 /* levelManager.m in Sources */,
 				1886EA8F14DD1E160089AD38 /* mainSettings.m in Sources */,
 				1886EA9914DE72410089AD38 /* skillsMgr.m in Sources */,
-				188A441614E92F9200612E60 /* levelSelectorView.m in Sources */,
 				188A446D14F0D48500612E60 /* magpieClass.m in Sources */,
 				18820A9314FFB28D00CCB726 /* utilsButtonClass.m in Sources */,
 				188361A51508DEEB0069E25E /* heartMagpieClass.m in Sources */,
@@ -544,7 +512,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18D162CF14CD85820070A3BA /* llTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,14 +534,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		18D162CA14CD85820070A3BA /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18D162CB14CD85820070A3BA /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -582,10 +541,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -595,10 +561,15 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -608,14 +579,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";

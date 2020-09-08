@@ -2,7 +2,7 @@
 //  mainSettings.m
 //  ll
 //
-//  Created by Apple on 12-2-4.
+//  Created by Yunfei on 12-2-4.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
@@ -298,9 +298,9 @@ static mainSettings *shardSettings = nil;
 #pragma mark Custom Methods
 
 -(oneway void) release{
-    NSLog(@"release mainSettings... %d", [self retainCount]);
+    NSLog(@"release mainSettings... %lu", (unsigned long)[self retainCount]);
     [super release];
-    NSLog(@"\t--retain: %d", [self retainCount]);
+    NSLog(@"\t--retain: %lu", (unsigned long)[self retainCount]);
 }
 -(id) init{
     self = [super init];
@@ -342,7 +342,7 @@ static mainSettings *shardSettings = nil;
     [_floorBirdsNum release];
     [_magpieResources release];
     
-    [super release];
+    [super dealloc];
 }
 
 @end

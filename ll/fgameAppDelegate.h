@@ -2,7 +2,7 @@
 //  fgameAppDelegate.h
 //  ll
 //
-//  Created by Apple on 12-1-23.
+//  Created by Yunfei on 12-1-23.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 

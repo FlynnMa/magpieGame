@@ -2,7 +2,7 @@
 //  welcome.m
 //  magpieBridge
 //
-//  Created by Apple on 12-1-23.
+//  Created by Yunfei on 12-1-23.
 //  Copyright (c) 2012年 __yunfei.studio__. All rights reserved.
 //
 
@@ -145,24 +145,22 @@
 }
      
 -(void)onStart{
-    levelSelectorView *lvlView;
     CGRect   inFrame = self.view.frame;
     CGRect   leftFrame  = inFrame;
     CGRect   rightFrame = inFrame;
 
     leftFrame.origin.x -= inFrame.size.width;
     rightFrame.origin.x += inFrame.size.width;
-    lvlView = [[levelSelectorView alloc] initWithFrame:rightFrame];
-    [lvlView loadViews];
-    [self.view.superview addSubview:lvlView];
+    mainGameView *gameView = [[mainGameView alloc] initWithFrame:rightFrame];
+    [self.view.superview addSubview:gameView];
     [UIView animateWithDuration:.3
                           delay:0
                         options:UIViewAnimationCurveEaseIn
                      animations:^{
                          [self.view setFrame:leftFrame];
-                         [lvlView setFrame:inFrame];
+                         [gameView setFrame:inFrame];
                      } completion:^(BOOL finished) {
-                         [lvlView release];
+                         [gameView release];
                      }];
 }
 

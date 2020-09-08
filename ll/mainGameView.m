@@ -2,7 +2,7 @@
 //  MainViewController.m
 //  magpieBridge
 //
-//  Created by Apple on 12-1-23.
+//  Created by Yunfei on 12-1-23.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
@@ -69,7 +69,8 @@ const NSUInteger addScores[3] = {1, 4, 8};
 - (void)loadView
 {
     [self setBackgroundColor:
-     [UIColor colorWithPatternImage:[UIImage imageNamed:@"background-day.png"]]];
+      [UIColor colorWithPatternImage:
+        [UIImage imageNamed:@"background-day.png"]]];
     [self createAllLabelViews];
     [self createGame];
     [self pauseGame];
@@ -213,7 +214,7 @@ const NSUInteger addScores[3] = {1, 4, 8};
             floorMgr.initialBirdsNum = 3;
             [floorMgr startFloor];
             break;
-            
+
         default:
             break;
     }
@@ -232,6 +233,7 @@ const NSUInteger addScores[3] = {1, 4, 8};
     [skills release];
 
     [super release];
+    [super dealloc];
 }
 
 /*

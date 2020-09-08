@@ -2,7 +2,7 @@
 //  fgameAppDelegate.m
 //  ll
 //
-//  Created by Apple on 12-1-23.
+//  Created by Yunfei on 12-1-23.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
@@ -48,6 +48,7 @@
     [__managedObjectContext release];
     [__managedObjectModel release];
     [__persistentStoreCoordinator release];
+    [super dealloc];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
