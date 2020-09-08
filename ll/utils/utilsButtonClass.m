@@ -2,7 +2,7 @@
 //  utilsButtonClass.m
 //  magpieBridge
 //
-//  Created by Apple on 12-3-1.
+//  Created by Yunfei on 12-3-1.
 //  Copyright (c) 2012年 __Yunfei.Studio__. All rights reserved.
 //
 

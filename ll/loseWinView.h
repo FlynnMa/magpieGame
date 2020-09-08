@@ -2,7 +2,7 @@
 //  loseWinView.h
 //  ll
 //
-//  Created by Apple on 12-1-27.
+//  Created by Yunfei on 12-1-27.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  PauseViewController.h
 //  ll
 //
-//  Created by Apple on 12-1-25.
+//  Created by Yunfei on 12-1-25.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
